@@ -184,6 +184,7 @@ namespace Day3Tasks
         {
             bool check = false;
             while (!check)
+
             {
                 Console.Write("Lūdzu. ievadiet veselo skaitļi no 1 līdz 8, vai extra, lai izpildīt attiecīgo uzdevumu (exit, lai izietu no programmas): ");
                 string option = Console.ReadLine().Trim();
