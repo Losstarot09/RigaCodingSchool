@@ -186,9 +186,9 @@ namespace Day3Tasks
             while (!check)
 
             {
-                Console.Write("Lūdzu. ievadiet veselo skaitļi no 1 līdz 8, vai extra, lai izpildīt attiecīgo uzdevumu (exit, lai izietu no programmas): ");
-                string option = Console.ReadLine().Trim();
-                switch (option)
+                Console.Write("Lūdzu. ievadiet veselo skaitļi no 1 līdz 8, vai extra, lai izpildīt attiecīgo uzdevumu /n" +
+                    " (exit, lai izietu no programmas): ");
+                switch (Console.ReadLine().Trim())
                 {
                     case "1":
                         {
@@ -235,17 +235,17 @@ namespace Day3Tasks
                             TaskExtraDay3();
                             break;
                         }
+                    case "exit":
+                        {
+                            check = true;
+                            break;
+                        }
                     default:
                         {
                             Console.WriteLine("Lūdzu evadiet pareizo ciparu vai vardu!!!");
                             break;
                         }
                 }
-                if ( option == "exit")
-                {
-                    check = true;
-                }
-
             }
         }
     }
