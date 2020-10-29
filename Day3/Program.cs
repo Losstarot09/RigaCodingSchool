@@ -186,7 +186,7 @@ namespace Day3Tasks
             while (!check)
 
             {
-                Console.Write("Lūdzu. ievadiet veselo skaitļi no 1 līdz 8, vai extra, lai izpildīt attiecīgo uzdevumu /n" +
+                Console.Write("Lūdzu. ievadiet veselo skaitļi no 1 līdz 8, vai extra, lai izpildīt attiecīgo uzdevumu \n" +
                     " (exit, lai izietu no programmas): ");
                 switch (Console.ReadLine().Trim())
                 {

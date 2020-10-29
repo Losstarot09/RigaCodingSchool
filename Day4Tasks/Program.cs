@@ -43,7 +43,7 @@ namespace Day4Tasks
             Console.WriteLine("Visi vārdi, kas sakas ar J:");
             for (int i = 0; i < names.Length; i++)
             {
-                if (names[i].Substring(0, 1) == "J")
+                if (names[i][0] == 'J')
                 {
                     Console.Write(names[i] + ", ");
                 }
