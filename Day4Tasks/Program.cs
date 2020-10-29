@@ -20,12 +20,10 @@ namespace Day4Tasks
         public static void Task2()
         {
             int[] numbers = new int[6] { 1, 3, 4, 8, 0, 23 };
-            int i = 0;
             Console.Write("Visi masiva elementi: ");
             Console.Write(string.Join(", ", numbers));
 
             Console.Write("\n Visi masīva elementi, kuri ir lielaki par 5: ");
-            i = 0;
             foreach (int elem in numbers)
             {
                 if (elem > 5)
@@ -71,7 +69,7 @@ namespace Day4Tasks
             string mirrorText = "";
             for (int i = userText.Length; i > 0; i--)
             {
-                mirrorText += userText.Substring(i - 1, 1);
+                mirrorText += userText[i -1];
             }
             Console.WriteLine($"\"{userText}\" <=> \"{mirrorText}\"");
         }
