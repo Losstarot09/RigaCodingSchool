@@ -47,21 +47,74 @@ namespace Day5Tasks
                 }
             }
             int[] chosenNumbers = new int[count];
+            count = 0;
+            for (int i = 0; i < allNumbers.Length; i++) {
+                if (allNumbers[i] > 15)
+                {
+                    chosenNumbers[count] = allNumbers[i];
+                    count++;
+                }
+            }
+            Console.WriteLine($"allnumbers = {String.Join(", ", allNumbers)}");
+            Console.WriteLine();
+            Console.WriteLine($"chosenNumbers = {String.Join(", ", chosenNumbers)}");
+
         }
 
         public static void Task4()
         {
-
+            string[] names = new string[5] {"jānis", "pēteris", "andris", "sergejs", "antons"};
+            for (int i = 0; i < names.Length; i++)
+            {
+                if (names[i].Contains("a") || names[i].Contains("ā"))
+                {
+                    Console.WriteLine(names[i]);
+                }
+            }
         }
 
         public static void Task5()
         {
-
+            int[] numbers = new int[12] { 1, 56, 77, 89, 34, 22, 2, 3, 4, 8, 43, 56 };
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] > 0 && numbers[i] <= 30)
+                {
+                    Console.Write(numbers[i] + " ");
+                }
+            }
+            Console.WriteLine();
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] > 30 && numbers[i] <= 60)
+                {
+                    Console.Write(numbers[i] + " ");
+                }
+            }
+            Console.WriteLine();
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] > 60 && numbers[i] <= 90)
+                {
+                    Console.Write(numbers[i] + " ");
+                }
+            }
+            Console.WriteLine();
         }
 
         public static void Task6()
         {
-
+            int count = 0;
+            int[,] array2D = new int[5, 5];
+            for (int i =0; i < array2D.GetLength(0); i++)
+            {
+                for (int j = 0; j < array2D.GetLength(1); j++)
+                {
+                    array2D[i, j] = ++count;
+                    Console.Write(array2D[i, j] + " ");
+                }
+                Console.WriteLine();
+            }
         }
 
         static void Main(string[] args)
