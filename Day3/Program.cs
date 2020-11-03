@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Day3Tasks
 {
@@ -182,6 +183,7 @@ namespace Day3Tasks
 
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
             bool check = false;
             while (!check)
 

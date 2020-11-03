@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Day1Tasks
 {
@@ -69,6 +70,7 @@ namespace Day1Tasks
 
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
             bool check = false;
             while (!check)
             {

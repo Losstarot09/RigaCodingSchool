@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Threading.Tasks.Dataflow;
+using System.Text;
 
 namespace Day5Tasks
 {
@@ -119,6 +119,7 @@ namespace Day5Tasks
 
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
             bool check = false;
             while (!check)
 

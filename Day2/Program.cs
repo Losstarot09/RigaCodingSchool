@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Net.Http.Headers;
+using System.Text;
 
 namespace Day2Tasks
 {
@@ -66,14 +66,55 @@ namespace Day2Tasks
             Console.WriteLine("Mums ir māja ar 5 stāviem un pagrabu, kas satur dažadus priekšmetus.");
             Console.WriteLine("Priekšmeti atrodas konkrētājā stāvā vai pagrabā atkarīgi no 1 burtas prikšmeta nosaukumā.");
             Console.Write("Lūdzu, ivadiet priekšmetu: ");
-            string thing = Console.ReadLine();
-            switch (thing.Substring(0, 1).ToLower())
+            do
             {
-
-            }
+                string thing = Console.ReadLine();
+                string firstFloor = "aābcčd";
+                string secondFloor = "eēfgģh";
+                string thirdFloor = "iījklļ";
+                string fourthFloor = "mnņop";
+                string fifthFloor = "rsštuū";
+                if (firstFloor.Contains(char.ToLower(thing[0])))
+                {
+                    Console.WriteLine($"{thing} atrodisies 1. stāvā");
+                } 
+                else if (secondFloor.Contains(char.ToLower(thing[0])))
+                {
+                    Console.WriteLine($"{thing} atrodisies 2. stāvā");
+                }
+                else if (thirdFloor.Contains(char.ToLower(thing[0])))
+                {
+                    Console.WriteLine($"{thing} atrodisies 3. stāvā");
+                }
+                else if (fourthFloor.Contains(char.ToLower(thing[0])))
+                {
+                    Console.WriteLine($"{thing} atrodisies 4. stāvā");
+                }
+                else if (fifthFloor.Contains(char.ToLower(thing[0])))
+                {
+                    Console.WriteLine($"{thing} atrodisies 5. stāvā");
+                }
+                else
+                {
+                    Console.WriteLine($"{thing} atrodisies pagrabā");
+                }
+            } while (Console.ReadKey().Key != ConsoleKey.Escape);
+            
         }
+
+        public static void Task3()
+        {
+            
+        }
+
+        public static void TaskExtraDay2()
+        {
+            
+        }
+
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
             bool check = false;
             while (!check)
             {

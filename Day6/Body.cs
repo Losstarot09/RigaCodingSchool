@@ -40,7 +40,7 @@ namespace Day6
                         }
                     case "extra":
                         {
-
+                            Day6Extra.NotCicle();
                             break;
                         }
                     case "exit":
