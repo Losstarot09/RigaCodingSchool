@@ -30,6 +30,15 @@ namespace Day8
                         }
                     case "extra":
                         {
+                            Console.Write("Lūdzu ievadiet paroli: ");
+                            if (PasswordValidator.PasswordValidate(Console.ReadLine()))
+                            {
+                                Console.WriteLine("Parole ir derīga!");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Parole ir nederīga");
+                            }
                             break;
                         }
                     case "exit":
